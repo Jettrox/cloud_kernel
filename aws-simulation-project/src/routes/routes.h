@@ -1,5 +1,5 @@
 #include <iostream>
-#include <boost/asio.hpp> // Si usas Boost para el servidor
+#include <boost/asio.hpp> // Si usas Boost para el servidoo
 
 void start_server() {
     const std::string host = "0.0.0.0"; // Escucha en todas las interfaces
@@ -17,4 +17,16 @@ void start_server() {
     std::cout << "Client connected!" << std::endl;
 
     // Aquí manejarías las solicitudes del cliente
+}
+
+void handle_request(const std::string& request) {
+    if (request == "/start") {
+        std::cout << "Starting kernel simulation..." << std::endl;
+        // Lógica para iniciar el simulador
+    } else if (request == "/status") {
+        std::cout << "Kernel simulation status: Running" << std::endl;
+        // Lógica para devolver el estado del simulador
+    } else {
+        std::cout << "404 Not Found" << std::endl;
+    }
 }
