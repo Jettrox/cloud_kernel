@@ -18,10 +18,10 @@ namespace net = boost::asio;       // Alias para Boost.Asio
 using tcp = boost::asio::ip::tcp;  // Alias para TCP
 
 // Configuración de la base de datos
-const std::string DB_HOST = "your-rds-endpoint.amazonaws.com";
+const std::string DB_HOST = "kernelbd.co9kcumk48i6.us-east-1.rds.amazonaws.com";
 const std::string DB_USER = "admin";
-const std::string DB_PASSWORD = "yourpassword";
-const std::string DB_NAME = "yourdatabase";
+const std::string DB_PASSWORD = "Jagerylia0306.,";
+const std::string DB_NAME = "kernel";
 
 // Estados del proceso
 enum class ProcessState {
